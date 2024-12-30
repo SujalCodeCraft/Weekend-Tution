@@ -869,6 +869,8 @@ body {
     background-color: #101828;
     padding: 3rem 0 2rem 0;
     color: #EAECF0;
+    position: relative;
+    z-index: 99;
 
     .footerFirst {
         padding: 2rem 0;
@@ -1085,4 +1087,312 @@ body {
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+//contact us page
+.contactUs__{
+    padding: 3rem 0;
+    position: relative;
+    padding-bottom: 0;
+    .toprightbgImg{
+        position: absolute;
+        right: 10%;
+        top: -1rem;
+        z-index: -2;
+      
+    }
+    .bottomLeftImg{
+        img{
+            position: absolute;
+            bottom: -8%;
+            left: 8%;
+        }
+    }
+    .contactUsCard__{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 2rem ;
+        position: relative;
+        z-index: 99;
+        background-color: white;
+       
+        .contactHeading{
+            text-align: center;
+            margin-bottom: 2rem;
+            >h3{
+                color: #1A906B;
+                border-bottom: 2px solid #1A906B;
+                max-width: fit-content;
+                margin: 0 auto;
+            }
+        }
+        .contactForm{
+            padding-left: 2rem;
+            .formHead{
+                >h4{
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            .inputsBox{
+                padding: 0.8rem 0;
+                position: relative;
+                >label{
+                    position: absolute;
+                    background-color: white;
+                    display: block;
+                    top: 2px;
+                    left: 0.4rem;
+                    font-size: 14px;
+                    padding: 0 0.2rem;
+                }
+                input{
+                    border: 1px solid #878787;
+                    padding: 0.5rem ;
+                    width: 80%;
+                    display: block;
+                    border-radius: 0.2rem;
+                    &::placeholder{
+                        color: #878787;
+                    }
+                }
+                textarea{
+                    border: 1px solid #878787;
+                    padding: 0.5rem ;
+                    width: 80%;
+                    display: block;
+                    border-radius: 0.2rem;
+                    min-height: 20vh;
+                    &::placeholder{
+                        color: #878787;
+                    }
+                }
+               
+            }
+            .sendBtn{
+                width: 80%;
+                margin: 0.5rem 0;
+                padding: 5px;
+                border-radius: 0.2rem;
+                border: none;
+                background-color: #20B486;
+                color: white;
+                display: block;
+            }
+        }
+        .contactAddress{
+            padding-top: 2rem;
+            >ul{
+                list-style-type: none;
+                margin-bottom: 0;
+                >:nth-child(5){
+                    padding: 5px 0;
+                    text-decoration: underline;
+                }
+                >:nth-child(6){
+                    padding-bottom: 5px;
+
+                }
+                .socialIcon{
+                    span{
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.lineboxes{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    img{
+        position: relative;
+        top: 4rem;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+//media query 
+@media only screen and (max-width:576px){
+   
+   .header__{
+    padding-right: 1rem;
+   }
+    .header__ .nav__ .nav_items{
+        display: none;
+    }
+    .nav_button{
+        display: none;
+    }
+    .sidebar__{
+        i{
+            font-size: 1.5rem;
+        }
+    }
+    .hero__{
+        padding: 0;
+        overflow: hidden;
+        .hero_main{
+            padding: 1rem 0;
+        }
+    }
+    .hero__ .hero_main .hero_right .right-1{
+        max-width: 100px;
+    }
+    .hero__ .hero_main .hero_right .right-3{
+        max-width: 150px;
+    }
+    .hero__ .hero_main .hero_right .right-2{
+        max-width: 150px;
+    }
+    .hero__ .hero_main .hero_right .right_main .right_main2{
+        left: 2px;
+    }
+    .hero__ .hero_main .hero_left{
+        padding-top: 2rem;
+    }
+    .hero__ .hero_main .hero_left > h2{
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+    .hero__ .hero_main .hero_left > :nth-child(2){
+        padding: 0;
+        font-size: 13px;
+        max-width: 100%;
+    }
+    .hero__ .hero_main .hero_left .left_butons button{
+        padding: 0.4rem 1rem;
+    }
+    .hero__ .hero_main .hero_left .left_butons > :first-child{
+        margin-right: 1rem;
+    }
+    .hero__ .hero_main .hero_left .small-btns .left_small{
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+       img{
+        display: block;
+       }
+    }
+    .hero__ .hero_main .hero_left .small-btns .left_small p span img{
+        max-width: 40px;
+    }
+    .hero__ .hero_bottom{
+        flex-wrap: wrap;
+       
+        .bottom_sub{
+            max-width: 49vw;
+            img{
+                max-width: 120px;
+                margin: 1rem 0;
+            }
+        }
+       
+    }
+    .hero__ .hero_bottom .bottom_sub p{
+        color: #646464 ;
+    }
+
+
+    .our_services .services__main .medium_heading > h3{
+        word-spacing: normal;
+        font-size: 2rem ;
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+    }
+    .our_services .services__main .serviceSlider{
+        padding: 1rem;
+    }
+    .our_services .services__main .serviceSlider .serviceCard{
+        margin: 1rem;
+    }
+    .our_services .services__main .serviceSlider .serviceCard .serviceCard-head{
+        gap: 1rem;
+
+    }
+    .our_services .services__main .serviceSlider .serviceCard .serviceCard-head .cardHeadRight p{
+        font-size: 1rem ;
+    }
+    .our_services .services__main .serviceSlider .serviceCard .serviceCard-main-txt p{
+        max-width: 100%;
+        font-size:14px;
+    }
+    .explore__ .exploreSlider .exploreSliderCard{
+        margin: 1rem;
+
+    }
+    .explore__ .exploreHeader .sectionTxt p{
+        font-size: 14px;
+    }
+    .explore__ .exploreHeader .mainHeading h3{
+        font-size: 2.5rem;
+    }
+    .explore__ .exploreSlider .exploreSliderCard .cardTxt .cardTxt1{
+        font-size: 14px;
+    }
+    .explore__ .exploreSlider .exploreSliderCard .cardTxt .cardTxt2-box{
+        padding-right: 0;
+    }
+    .explore__ .exploreSlider .exploreSliderCard .cardTxt .cardTxt3{
+        font-size: 14px;
+    }
+    .explore__ .exploreSlider .exploreSliderCard .cardTxt .cardBottom .cardBottomLeft{
+        gap: 0.5rem;
+    }
+    .explore__ .exploreSlider .exploreSliderCard .cardTxt .cardBottom .cardBottomLeft .clientName p{
+        font-size: 13px;
+    }
+    .exploreHeader .mainHeading h3{
+        font-size: 2rem;
+    }
+    .tutors__ .exploreHeader .sectionTxt{
+        max-width: 100%;
+        p{
+            font-size: 14px;
+        }
+    }
+    .tutors__ .herosCards .herosCard__{
+        margin: 1rem;
+        padding: 0.5rem;
+        min-height: 274px;
+    }
+    .tutors__ .herosCards .herosCard__ > img{
+        margin: 0;
+        max-width: 70px;
+    }
+    .tutors__ .herosCards .herosCard__ .heroDetail{
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .tutors__ .herosCards .herosCard__ .heroTitle{
+        font-size: 16px;
+    }
+    .studenReview__ .stuReviewSlider .reviewtxt p{
+        font-size: 1rem;
+    }
+    .studenReview__ .stuReviewSlider .reviewBox{
+        padding: 0;
+    }
+
 }
