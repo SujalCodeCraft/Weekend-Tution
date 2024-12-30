@@ -22,6 +22,15 @@
         <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     </head>
     <body>
+        <!-- loader  -->
+        <div class="dots-loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        
+
+
         <!-- header  -->
         <header class=" header__">
             <div class="nav__ container">
@@ -59,11 +68,36 @@
                     </a>
                 </div>
                 <!-- hamburger icon for small view  -->
-                 <div class="sidebar__">
+                 <div class="sidebar__" id="barBtn">
                     <i class="fa-solid fa-bars"></i>
                  </div>
             </div>
         </header>
+        <!-- custom offcanvas -->
+        <div class="customOffcanvas" id="customOffcanvas">
+            <div class="offcanvas_body">
+                <!-- offcanvas Header  -->
+                <div class="offcanvasHeader">
+                    <div class="headerLeft">
+                        <img src="assets/img/logo-favicon.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="headerRight">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <!-- offcanvas body  -->
+                 <div class="offcanvasContent">
+                    <ul>
+                        <li><a href="#">Home </a></li>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                 </div>
+
+            </div>
+        </div>
 
         <!-- hero section -->
         <section class="hero__">
@@ -720,7 +754,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="footerLeft2 footerSub">
                                             <h3 class="footerSubHeading">
                                                 Product
@@ -742,7 +776,7 @@
                         <div class="col-md-6">
                             <div class="footerRight">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="footerSub">
                                             <h3 class="footerSubHeading">
                                                 Company 
@@ -755,7 +789,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="footerSub">
                                             <h3 class="footerSubHeading">
                                                 Social

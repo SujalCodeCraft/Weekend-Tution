@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader </title>
+
+</head>
+<style>
+    .spinner{
+        border: 5px solid transparent;
+        border-top: 5px solid blue ;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+    }
+    @keyframes spin {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .dots{
+        border: 8px dotted transparent;
+        border-top: 8px dotted blue;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        animation: spin 1s infinite linear;
+    }
+</style>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <div class="dotedloader">
+        <div class="dots"></div>
+    </div>
+</body>
+</html>

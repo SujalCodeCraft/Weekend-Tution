@@ -91,5 +91,32 @@ $(document).ready(function () {
 
 
 
+// Custom offcanvas
+let offcanvasBtn = document.getElementById("barBtn");
+let offCanvas = document.getElementById("customOffcanvas");
+let body = document.getElementsByTagName("body")[0];  // Access the first body element
 
+// Offcanvas open on click
+offcanvasBtn.addEventListener("click", () => {
+    offCanvas.classList.add("open");  // Add 'open' class to slide the offcanvas
+    body.style.maxHeight = "100vh";   // Fix body height
+    body.style.overflow = "hidden";   // Disable scroll
+});
+
+// Close offcanvas
+let closeBtn = document.querySelector(".fa-xmark");
+closeBtn.addEventListener("click", () => {
+    offCanvas.classList.remove("open");  // Remove 'open' class to slide it back out
+    body.style.maxHeight = "auto";       // Allow body height to expand
+    body.style.overflow = "auto";        // Enable scroll again
+});
+
+
+
+
+// Hide loader once content is loaded
+window.addEventListener("load", () => {
+    let loader = document.querySelector(".dots-loader");
+    loader.style.display = "none";  // Hide the loader
+});
 
