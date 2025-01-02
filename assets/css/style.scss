@@ -1092,6 +1092,19 @@ body {
 
 
 // customoffcanvas 
+.offcanvasBtn{
+    width: 100%;
+    display: block;
+    button{
+        width: 100%;
+        margin: 0.5rem 0;
+        border-radius: 0.5rem;
+        border: 2px solid #1A906B;
+        background-color: transparent;
+        color: #1A906B;
+        padding: 0.5rem;
+    }
+}
 .customOffcanvas {
     background-color: #FFF9F3;
     position: fixed;  /* Fixed to ensure it remains visible when scrolling */
@@ -1175,7 +1188,7 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;  /* Make dots round */
-    background-color: #3498db;  /* Blue color for the dots */
+    background-color: #1A906B;  /* Blue color for the dots */
     animation: dotAnimation 1.4s infinite ease-in-out;
 }
 
@@ -1334,12 +1347,207 @@ body {
 
 
 
+//course page style
+
+.courses__{
+    padding: 3rem 0;
+    .coursesHeading{
+        padding-bottom: 3rem;
+        font-weight: 500;
+        color: #1A906B;
+    }
+    .coursesCards{
+        padding: 1rem 0;
+        .courseCard{
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: #eff1f56e;
+            margin-bottom: 2rem;
+        }
+        .courseDetails{
+            padding-top: 3px;
+            p{
+                margin-bottom: 0;
+                padding-bottom: 2px;
+                font-size: 14px;
+                color: #646464;
+            }
+            .courseTitle{
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #1A906B;
+            }
+            .courseDescription{
+                font-size: 14px;
+                line-height: normal;
+            }
+            .courseTime{
+                padding: 2px 0;
+                font-weight: 500;
+                color: black;
+            }
+            .courseTeacher{
+                color: black;
+                font-weight: 500;
+                span{
+                    i{
+                        color: #1A906B;
+                    }
+                }
+            }
+            .coursePrice{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    margin-bottom: 0;
+                }
+                .courseRating{
+                    i{
+                        color: gold;
+                    }
+                }
+                .coursePrice{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #1A906B;
+                }
+            }
+        }
+    }
+}
+
+
+//faq page
+
+.faqs__{
+    padding: 2rem 0;
+    .faqHead{
+        padding-bottom: 2rem;
+        h2{
+            font-size: 3rem;
+            font-weight: 500;
+            color: #1A906B;
+        }
+        p{
+            margin-bottom: 0;
+            text-align: center;
+            max-width: 60%;
+            color: #646464;
+            margin: 0 auto;
+        }
+    }
+
+    .faqQuestions{
+        padding: 1rem;
+        .faqQuestionBox{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            margin-bottom: 2rem;
+            .questionBoxHead{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-size: 1.2rem;
+                    margin-bottom: 0;
+                    i{
+                        font-size: 2rem;
+                    }
+                }
+               
+
+            }
+            .answer{
+               display: none;
+               
+            }
+        }
+    }
+}
+
+
+
+
+//login page 
+.login__{
+    padding: 3rem 0;
+    .loginBox{
+        border: 2px solid #1A906B;
+        padding: 2rem ;
+        border-radius: 1rem;
+        .loginCard{
+            >h4{
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                font-weight: 500;
+                color: #1A906B;
+
+            }
+            .inputsBox{
+                padding: 0.5rem 0;
+                input{
+                    width: 100%;
+                    padding: 0.8rem ;
+                    border-radius: 1rem;
+                    border: 1px solid #1A906B;
+                    &:focus{
+                        border: 2px solid #1A906B;
+                        outline: none;
+                    }
+                }
+            }
+            .forgotPass{
+                text-decoration: underline;
+                color: #1A906B;
+                cursor: pointer;
+                text-align: end;
+            }
+            .signInBtn{
+                width: 100%;
+                color: white;
+                background-color: #1A906B;
+                border: none;
+                padding: 0.8rem;
+                margin: 0.5rem 0;
+                border-radius: 1rem;
+            }
+            .signWithG{
+                width: 100%;
+                color: #1A906B;
+                background-color: #fff;
+                border: 2px solid #1A906B;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                &:hover{
+                    background-color: orange;
+                    color: #fff;
+                    border: 2px solid orange;
+                }
+                
+                
+            }
+
+        }
+    }
+}
+
+
 
 
 
 
 
 //media query 
+
+@media only screen and (min-width:992px){
+    .sidebar__{
+        display: none;
+    }
+}
 @media only screen and (max-width:576px){
    
    .header__{

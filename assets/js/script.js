@@ -26,10 +26,10 @@ $(document).ready(function () {
     });
 
     // Update active dot on slide change
-    owl.on('changed.owl.carousel', function(event) {
+    owl.on('changed.owl.carousel', function (event) {
         let currentSlide = event.item.index;
         let totalSlides = event.item.count;  // Total number of slides
-        
+
         // If loop is enabled, reset the current index after full rotation
         let normalizedIndex = (currentSlide % totalSlides + totalSlides) % totalSlides;
 
@@ -76,12 +76,12 @@ $(document).ready(function () {
         autoplay: true,         // Enable autoplay
         autoplayTimeout: 2000,  // Time between each slide (3 seconds)
         autoplayHoverPause: true, // Pause autoplay when hover over the carousel
-        
+
         responsive: {           // Adjust the number of items based on screen size
             0: {
                 items: 1        // 1 item on small screens
             },
-           
+
         }
     });
 });
@@ -120,3 +120,31 @@ window.addEventListener("load", () => {
     loader.style.display = "none";  // Hide the loader
 });
 
+
+
+
+
+// btn.closest(".faqQuestionBox"):
+// btn yeh tumhara current plus icon hai (yaani wo button jispar click kiya gaya).
+// .closest(selector) ek DOM method hai jo element ke ancestors (parent, grandparent, etc.) mein se sabse pehle jo selector match kare usko return karta hai.
+
+
+const toggleBtn = document.querySelectorAll(".toggleBtn");
+toggleBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const answer = btn.closest(".faqQuestionBox").querySelector(".answer");
+        
+        // Display toggle logic
+        if (answer.style.display === "none" || answer.style.display === "") {
+            // Show the answer
+            answer.style.display = "block";
+            btn.classList.remove("bi-plus");
+            btn.classList.add("bi-dash");
+        } else {
+            // Hide the answer
+            answer.style.display = "none";
+            btn.classList.remove("bi-dash");
+            btn.classList.add("bi-plus");
+        }
+    });
+});

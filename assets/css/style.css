@@ -829,6 +829,20 @@ body a {
   font-weight: 500;
 }
 
+.offcanvasBtn {
+  width: 100%;
+  display: block;
+}
+.offcanvasBtn button {
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: 2px solid #1A906B;
+  background-color: transparent;
+  color: #1A906B;
+  padding: 0.5rem;
+}
+
 .customOffcanvas {
   background-color: #FFF9F3;
   position: fixed; /* Fixed to ensure it remains visible when scrolling */
@@ -902,7 +916,7 @@ body a {
   width: 15px;
   height: 15px;
   border-radius: 50%; /* Make dots round */
-  background-color: #3498db; /* Blue color for the dots */
+  background-color: #1A906B; /* Blue color for the dots */
   animation: dotAnimation 1.4s infinite ease-in-out;
 }
 
@@ -1050,6 +1064,176 @@ body a {
   z-index: 1;
 }
 
+.courses__ {
+  padding: 3rem 0;
+}
+.courses__ .coursesHeading {
+  padding-bottom: 3rem;
+  font-weight: 500;
+  color: #1A906B;
+}
+.courses__ .coursesCards {
+  padding: 1rem 0;
+}
+.courses__ .coursesCards .courseCard {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 241, 245, 0.431372549);
+  margin-bottom: 2rem;
+}
+.courses__ .coursesCards .courseDetails {
+  padding-top: 3px;
+}
+.courses__ .coursesCards .courseDetails p {
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  font-size: 14px;
+  color: #646464;
+}
+.courses__ .coursesCards .courseDetails .courseTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1A906B;
+}
+.courses__ .coursesCards .courseDetails .courseDescription {
+  font-size: 14px;
+  line-height: normal;
+}
+.courses__ .coursesCards .courseDetails .courseTime {
+  padding: 2px 0;
+  font-weight: 500;
+  color: black;
+}
+.courses__ .coursesCards .courseDetails .courseTeacher {
+  color: black;
+  font-weight: 500;
+}
+.courses__ .coursesCards .courseDetails .courseTeacher span i {
+  color: #1A906B;
+}
+.courses__ .coursesCards .courseDetails .coursePrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses__ .coursesCards .courseDetails .coursePrice p {
+  margin-bottom: 0;
+}
+.courses__ .coursesCards .courseDetails .coursePrice .courseRating i {
+  color: gold;
+}
+.courses__ .coursesCards .courseDetails .coursePrice .coursePrice {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1A906B;
+}
+
+.faqs__ {
+  padding: 2rem 0;
+}
+.faqs__ .faqHead {
+  padding-bottom: 2rem;
+}
+.faqs__ .faqHead h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1A906B;
+}
+.faqs__ .faqHead p {
+  margin-bottom: 0;
+  text-align: center;
+  max-width: 60%;
+  color: #646464;
+  margin: 0 auto;
+}
+.faqs__ .faqQuestions {
+  padding: 1rem;
+}
+.faqs__ .faqQuestions .faqQuestionBox {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.faqs__ .faqQuestions .faqQuestionBox .questionBoxHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faqs__ .faqQuestions .faqQuestionBox .questionBoxHead p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.faqs__ .faqQuestions .faqQuestionBox .questionBoxHead p i {
+  font-size: 2rem;
+}
+.faqs__ .faqQuestions .faqQuestionBox .answer {
+  display: none;
+}
+
+.login__ {
+  padding: 3rem 0;
+}
+.login__ .loginBox {
+  border: 2px solid #1A906B;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.login__ .loginBox .loginCard > h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1A906B;
+}
+.login__ .loginBox .loginCard .inputsBox {
+  padding: 0.5rem 0;
+}
+.login__ .loginBox .loginCard .inputsBox input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid #1A906B;
+}
+.login__ .loginBox .loginCard .inputsBox input:focus {
+  border: 2px solid #1A906B;
+  outline: none;
+}
+.login__ .loginBox .loginCard .forgotPass {
+  text-decoration: underline;
+  color: #1A906B;
+  cursor: pointer;
+  text-align: end;
+}
+.login__ .loginBox .loginCard .signInBtn {
+  width: 100%;
+  color: white;
+  background-color: #1A906B;
+  border: none;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+}
+.login__ .loginBox .loginCard .signWithG {
+  width: 100%;
+  color: #1A906B;
+  background-color: #fff;
+  border: 2px solid #1A906B;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.login__ .loginBox .loginCard .signWithG:hover {
+  background-color: orange;
+  color: #fff;
+  border: 2px solid orange;
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar__ {
+    display: none;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header__ {
     padding-right: 1rem;
